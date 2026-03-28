@@ -1,0 +1,6 @@
+@define-color selected-text #33ccff;
+@define-color text #c0d0e8;
+@define-color base rgba(10, 11, 16, 0.65);
+@define-color border #33ccff;
+@define-color foreground #c0d0e8;
+@define-color background rgba(10, 11, 16, 0.55);
