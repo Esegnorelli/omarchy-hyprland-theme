@@ -59,14 +59,7 @@ This theme goes beyond colors — it integrates all native Hyprland visual featu
 omarchy-theme-install https://github.com/Esegnorelli/omarchy-hyprland-theme.git
 ```
 
-> **Note:** For full blur effects on Waybar and Walker, add these lines to `~/.config/hypr/hyprland.conf`:
-> ```
-> layerrule = blur on, match:namespace waybar
-> layerrule = ignore_alpha 0.3, match:namespace waybar
-> layerrule = blur on, match:namespace walker
-> layerrule = ignore_alpha 0.3, match:namespace walker
-> layerrule = animation slide top, match:namespace walker
-> ```
+All effects (blur, layerrules, cursor, animations) are applied automatically — no manual configuration needed.
 
 ## Wallpapers
 
