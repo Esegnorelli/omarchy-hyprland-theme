@@ -1,2 +1,67 @@
 @define-color foreground #c0d0e8;
 @define-color background rgba(6, 6, 10, 0.55);
+@define-color accent #33ccff;
+@define-color accent-green #00ff99;
+
+* {
+    border-bottom: 1px solid alpha(@accent, 0.3);
+}
+
+#workspaces button.active {
+    color: @accent;
+    border-bottom: 2px solid @accent;
+}
+
+#workspaces button:hover {
+    color: @accent-green;
+}
+
+#custom-omarchy {
+    color: @accent;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#network,
+#bluetooth {
+    color: @accent;
+}
+
+#battery.warning {
+    color: #ffcc66;
+}
+
+#battery.critical {
+    color: #ff6e8a;
+}
+
+#clock:hover,
+#cpu:hover,
+#battery:hover,
+#pulseaudio:hover,
+#network:hover,
+#bluetooth:hover {
+    color: @accent-green;
+}
+
+tooltip {
+    background: rgba(10, 11, 16, 0.85);
+    border: 1px solid alpha(@accent, 0.5);
+    border-radius: 6px;
+    color: @foreground;
+}
+
+#custom-screenrecording-indicator.active,
+#custom-idle-indicator.active,
+#custom-notification-silencing-indicator.active,
+#custom-voxtype.recording {
+    color: #ff6e8a;
+}
+
+#tray menu {
+    background: rgba(10, 11, 16, 0.85);
+    border: 1px solid alpha(@accent, 0.5);
+    border-radius: 6px;
+    color: @foreground;
+}
